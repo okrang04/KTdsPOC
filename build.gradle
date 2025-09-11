@@ -26,7 +26,7 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 	reports {
-        junitXml.enabled = true
-        html.enabled = true
+        junitXml.required.set(true) // junitXml 리포트가 필요하다고 설정
+        html.required.set(true)     // html 리포트가 필요하다고 설정
     }
 }
